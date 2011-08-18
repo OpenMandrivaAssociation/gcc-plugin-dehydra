@@ -3,7 +3,7 @@
 
 Name:		%{name}
 Version:	0.0.hg563
-Release:	1
+Release:	2
 License:	GPLv2
 Summary:	GCC Dehydra Plugin
 Group:		Development/C++
@@ -41,6 +41,8 @@ bootstrap Treehydra, a heavy-duty static analysis GCC plugin.
 
 %files
 %{gccdir}/gcc_dehydra.so
+%{gccdir}/libs/*
+%{gccdir}/libs/unstable/*
 
 %package	-n gcc-plugin-treehydra
 Summary:	GCC Treehydra Plugin
@@ -93,6 +95,10 @@ sed -ri -e 's/\$\(GCC_PLUGIN_HEADERS\)/\$\(GCC_PLUGIN_HEADERS\) \$\(GCC_PLUGIN_H
 %install
 for plugin in gcc_dehydra.so gcc_treehydra.so; do
 	%{__install} -m755 -D $plugin %{buildroot}/%{gccdir}/$plugin
+done;
+
+for lib in libs/*.js libs/unstable/*.js; do
+	%{__install} -m644 -D $lib %{buildroot}/%{gccdir}/$lib
 done;
 
 %clean
