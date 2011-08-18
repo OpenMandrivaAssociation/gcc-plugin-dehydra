@@ -3,7 +3,7 @@
 
 Name:		%{name}
 Version:	0.0.hg563
-Release:	3
+Release:	4
 License:	GPLv2
 Summary:	GCC Dehydra Plugin
 Group:		Development/C++
@@ -57,6 +57,7 @@ Requires:	ppl-devel
 Requires:	ppl_c-devel
 Requires:	mpfr-devel
 Requires:	libmpc-devel
+Requires:	%{name}
 
 %description	-n gcc-plugin-treehydra 
 Treehydra is a GCC plugin that provides a low level JavaScript binding
