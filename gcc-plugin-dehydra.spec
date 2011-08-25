@@ -129,7 +129,7 @@ Requires:	libmpc-devel
 Requires:	%{name}
 Requires:	spidermonkey-mozillacentral
 
-%description	-n gcc-plugin-treehydra 
+%description	-n gcc4.5-plugin-treehydra 
 Treehydra is a GCC plugin that provides a low level JavaScript binding
 to GCC's GIMPLE AST representation. Treehydra is intended for precise
 static analyses.
