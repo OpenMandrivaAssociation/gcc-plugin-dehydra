@@ -26,8 +26,8 @@ BuildRequires:	%{_gcc}-c++
 BuildRequires:	%{_gcc45}-c++
 BuildRequires:	%{_gcc}-plugin-devel
 BuildRequires:	%{_gcc45}-plugin-devel
-BuildRequires:	libstdc++6-devel
-BuildRequires:	libstdc++6-4.5-devel
+BuildRequires:	libstdc++-devel
+BuildRequires:	libstdc++-4.5-devel
 BuildRequires:  gmp-devel
 BuildRequires:  ppl-devel
 BuildRequires:  ppl_c-devel
