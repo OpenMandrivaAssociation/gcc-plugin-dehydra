@@ -22,10 +22,12 @@ Requires:	ppl_c-devel
 Requires:	mpfr-devel
 Requires:	libmpc-devel
 Requires:	spidermonkey-mozillacentral
-BuildRequires:	%{_gcc}
-BuildRequires:	%{_gcc45}
+BuildRequires:	%{_gcc}-c++
+BuildRequires:	%{_gcc45}-c++
 BuildRequires:	%{_gcc}-plugin-devel
 BuildRequires:	%{_gcc45}-plugin-devel
+BuildRequires:	libstdc++6-devel
+BuildRequires:	libstdc++6-4.5-devel
 BuildRequires:  gmp-devel
 BuildRequires:  ppl-devel
 BuildRequires:  ppl_c-devel
