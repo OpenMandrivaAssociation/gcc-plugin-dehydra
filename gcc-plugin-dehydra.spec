@@ -6,7 +6,7 @@
 
 Name:		%{name}
 Version:	0.0.hg563
-Release:	5
+Release:	6
 License:	GPLv2
 Summary:	GCC Dehydra Plugin
 Group:		Development/C++
