@@ -159,7 +159,7 @@ to be able to use JavaScript script from inside the compiler.
 %prep
 %setup -q -n %{name}-%{version}
 
-%apply_patches
+%autopatch -p1
 
 %build
 sed -ri -e 's/\$\(GCC_PLUGIN_HEADERS\)/\$\(GCC_PLUGIN_HEADERS\) \$\(GCC_PLUGIN_HEADERS\)\/c-family/g' Makefile.in
