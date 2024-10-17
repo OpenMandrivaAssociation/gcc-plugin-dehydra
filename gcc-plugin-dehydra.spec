@@ -10,7 +10,7 @@ Release:	6
 License:	GPLv2
 Summary:	GCC Dehydra Plugin
 Group:		Development/C++
-URL:		http://hg.mozilla.org/rewriting-and-analysis/dehydra/
+URL:		https://hg.mozilla.org/rewriting-and-analysis/dehydra/
 Source0:	%{name}-%{version}.tar.bz2
 Requires:	%{_gcc}-c++
 Suggests:	%{name}-doc
